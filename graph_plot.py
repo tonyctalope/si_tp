@@ -15,8 +15,8 @@ values_0x6D = []
 timestamps = []
 
 # Durée de la lecture et intervalle
-duration = 20  # secondes
-interval = 1  # secondes
+duration = 30  # secondes
+interval = 0.1  # secondes
 
 # Connexion au serveur Modbus
 if client.connect():
