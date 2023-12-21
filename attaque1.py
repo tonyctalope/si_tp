@@ -19,9 +19,8 @@ if client.connect():
     try:
         while True:  # Boucle infinie
             # Écriture de la valeur 100 dans le registre order_rub
-            client.write_register(register.phy_l_rub, 100)
-            client.write_register(register.phy_r_rub, 100)
-            print("Valeur 100 écrite dans le registre 0x0028")
+            client.write_register(register.order_rub, 100)
+            print("Valeur 100 écrite dans le registre order_rub")
 
             time.sleep(0.1)
 
