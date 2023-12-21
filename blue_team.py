@@ -60,7 +60,7 @@ def process_modbus_packet(packet):
             max_data = table_min_max[name_register]["max"]
         
             if(data < min_data or data > max_data):
-                generate_security_alert("data : " + data + " of register : " + register + " is out of range. Expect value between " + min_data + " and " + max_data)
+                generate_security_alert("data : " + str(data) + " of register : " + str(register) + " is out of range. Expect value between " + str(min_data) + " and " + str(max_data))
 
 def generate_security_alert(message):
     
